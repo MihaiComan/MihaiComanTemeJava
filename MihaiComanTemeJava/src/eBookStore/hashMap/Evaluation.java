@@ -19,15 +19,14 @@ public class Evaluation {
      private float stars;
      private int user_ID;
      private String description;
+     
      public Evaluation(float stars, int user_ID, String description) {
         
          try {
              this.stars = validateStars(stars);
              this.user_ID = user_ID;
              this.description = validateDescription(description);
-         } catch (ValidationException ex) {
-             Logger.getLogger(Evaluation.class.getName()).log(Level.SEVERE, null, ex);
-         } catch (IOException ex) {
+         } catch (ValidationException | IOException ex) {
              Logger.getLogger(Evaluation.class.getName()).log(Level.SEVERE, null, ex);
          }
       
@@ -165,16 +164,5 @@ public class Evaluation {
       return description; 
    }
     
-   // method to validate the user_ID
-   
- /*  static int validateUser_ID(int user_ID) throws ValidationException { 
-        int value=user_ID; 
-         
-        if (value = this.user_ID) { 
-             throw new ValidationException("should be unique for the same book"); 
-        } 
-        return value;  
-    }*/
-     
 }
    

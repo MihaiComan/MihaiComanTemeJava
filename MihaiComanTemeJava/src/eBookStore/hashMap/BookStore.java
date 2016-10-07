@@ -13,31 +13,19 @@ import static eBookStore.hashMap.Novel.Genre.ROMANCE;
 import static eBookStore.hashMap.Novel.Genre.SF;
 import java.util.*;
 import java.util.Map.Entry;
-import java.util.stream.Collectors;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
-//import org.apache.logging.log4j.Logger;
-//import org.apache.logging.log4j.LogManager;
+import java.util.logging.Level;
+
 /**
  *
  * @author Mihai
  */
 public class BookStore {
+       
     
-    
-          
-    /** Define a static logger variable so that it references the
-    * Logger instance named "logger"
-    * All the logging messages will be sent to 
-    * C:\Users\...\Documents\NetBeansProjects\TrainingsJava\JavaTrainings\logs\mylogs.txt
-    * the log4j2.properties file used to configure log4j has to be in the default package 
-    */
-    private static final Logger LOG = LogManager.getLogger(BookStore.class);
     
     public static void main(String[] args) {
             
-      LOG.info("Start Main");
-       
+             
         // create a list of evaluations
    
         Evaluation e1 = new Evaluation((float) 4,101,"The book tells the story "
@@ -103,7 +91,7 @@ public class BookStore {
         soldBooks.put(e9,b9);
         soldBooks.put(e10,b10);
         soldBooks.put(e11,b11);
-        soldBooks.put(e12,b11);
+        // soldBooks.put(e12,b11);
          
      
         // Get a set of the entries
@@ -120,22 +108,42 @@ public class BookStore {
             
         }
         
-        Map<Book, ArrayList<Evaluation>> reverseMap = new HashMap<>(
-        soldBooks.entrySet().stream()
-            .collect(Collectors.groupingBy(Map.Entry::getValue)).values().stream()
-            .collect(Collectors.toMap(
-                item -> item.get(0).getValue(),
-                item -> new ArrayList<>(
-                    item.stream()
-                        .map(Map.Entry::getKey)
-                        .collect(Collectors.toList())
-                ))
-        ));
-
-        System.out.println(reverseMap);
-
-       LOG.info("End Main");
-    
+        // method to determine if there is a duplicate book in the map
+        
+        Map<Book, ArrayList<Evaluation>> reverseMap = new HashMap<>(); 
+        
+        soldBooks.entrySet().stream().map((entry) -> {
+            if (!reverseMap.containsKey(entry.getValue())) {
+                reverseMap.put(entry.getValue(), new ArrayList<>());
+            }       return entry;
+        }).forEach((entry) -> {
+            ArrayList<Evaluation> keys = reverseMap.get(entry.getValue());
+            keys.add(entry.getKey());
+            reverseMap.put(entry.getValue(), keys);
+        
+        // method to compare if the User ID is the same for the same book
+        
+        if (keys.size()>1){
+            for (int i = 0; i < keys.size(); i++) {
+                for (int j = i+1; j < keys.size(); j++) {
+                // compare list.get(i) and list.get(j)
+                Evaluation current1=(Evaluation)keys.get(i);
+                Evaluation current2=(Evaluation)keys.get(j);
+                
+                if (current1.getUser_ID()==current2.getUser_ID()){
+                    try {
+                        throw new ValidationException1("User ID should be unique for the same book");
+                    } catch (ValidationException1 ex) {
+                        java.util.logging.Logger.getLogger(BookStore.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                    
+                }
+                }
+            }
+        }   
+           
+        });
+      
     }
 }
 

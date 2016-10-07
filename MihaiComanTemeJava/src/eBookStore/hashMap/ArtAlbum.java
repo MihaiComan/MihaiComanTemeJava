@@ -27,19 +27,6 @@ public class ArtAlbum extends Book{
     private int numberOfPages;
     private PaperQuality paperQuality;
     File file = new File("bookstore.txt");//creates a new file in the project directory
-    private Book next;
-    Scanner bookToSearch = new Scanner(System.in);
-
-    @Override
-    public Book getNext() {
-        return next;
-    }
-
-    @Override
-    public void setNext(Book next) {
-        this.next = next;
-    }
-    
     
 
     @Override
