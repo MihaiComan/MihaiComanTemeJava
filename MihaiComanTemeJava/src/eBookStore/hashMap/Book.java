@@ -19,19 +19,7 @@ public class Book {
     private  String title;
     private  int numberOfPages;
     File file = new File("bookstore.txt"); //creates a new file in the project directory
-    Book head;
-    private Book next;
-    Scanner bookToSearch = new Scanner(System.in);
-
-    public Book getNext() {
-        return next;
-    }
-
-    public void setNext(Book next) {
-        this.next = next;
-    }
-    
-    
+            
 
     public String getTitle() {
         return title;
