@@ -1,0 +1,80 @@
+0[INFO ] 2016-09-28 12:52:42.509 [main] BookStore - Start Main
+[INFO ] 2016-09-28 12:52:42.509 [main] BookStore - A new book was added to the Bookstore
+[INFO ] 2016-09-28 12:52:42.509 [main] BookStore - A book was removed from the Bookstore
+[ERROR] 2016-09-28 12:52:46.885 [main] BookStore - Error during run
+eBookStore.NotExistingBook: Required book doesn't exist in our bookstore
+	at eBookStore.BookStore.searchBook(BookStore.java:51) ~[classes/:?]
+	at eBookStore.BookStore.main(BookStore.java:95) [classes/:?]
+[INFO ] 2016-09-28 12:52:46.900 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-09-28 12:52:46.900 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-09-28 12:52:46.900 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-09-28 12:52:46.900 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-09-28 12:52:46.900 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-09-28 12:52:46.900 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-09-28 12:52:46.900 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-09-28 12:52:46.900 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-09-28 12:52:46.900 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-09-28 12:52:46.900 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-09-28 12:52:46.900 [main] BookStore - A new book was saved to the file Bookstore.txt
+[ERROR] 2016-09-28 12:52:46.900 [main] BookStore - Error during run
+java.lang.IndexOutOfBoundsException: Index: 11, Size: 11
+	at java.util.LinkedList.checkElementIndex(LinkedList.java:555) ~[?:1.8.0_92]
+	at java.util.LinkedList.get(LinkedList.java:476) ~[?:1.8.0_92]
+	at eBookStore.BookStore.main(BookStore.java:112) [classes/:?]
+[INFO ] 2016-09-28 12:52:46.916 [main] BookStore - End Main
+[INFO ] 2016-09-28 12:53:42.732 [main] BookStore - Start Main
+[INFO ] 2016-09-28 12:53:42.951 [main] BookStore - End Main
+[INFO ] 2016-09-30 17:40:45.281 [main] BookStore - Start Main
+[INFO ] 2016-09-30 17:40:45.332 [main] BookStore - A new book was added to the Bookstore
+[INFO ] 2016-09-30 17:40:45.332 [main] BookStore - A book was removed from the Bookstore
+[ERROR] 2016-09-30 17:40:51.590 [main] BookStore - Error during run
+eBookStore.NotExistingBook: Required book doesn't exist in our bookstore
+	at eBookStore.BookStore.searchBook(BookStore.java:51) ~[classes/:?]
+	at eBookStore.BookStore.main(BookStore.java:95) [classes/:?]
+[INFO ] 2016-09-30 17:40:51.595 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-09-30 17:40:51.597 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-09-30 17:40:51.598 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-09-30 17:40:51.599 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-09-30 17:40:51.600 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-09-30 17:40:51.601 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-09-30 17:40:51.602 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-09-30 17:40:51.603 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-09-30 17:40:51.605 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-09-30 17:40:51.606 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-09-30 17:40:51.607 [main] BookStore - A new book was saved to the file Bookstore.txt
+[ERROR] 2016-09-30 17:40:51.607 [main] BookStore - Error during run
+java.lang.IndexOutOfBoundsException: Index: 11, Size: 11
+	at java.util.LinkedList.checkElementIndex(LinkedList.java:555) ~[?:1.8.0_92]
+	at java.util.LinkedList.get(LinkedList.java:476) ~[?:1.8.0_92]
+	at eBookStore.BookStore.main(BookStore.java:112) [classes/:?]
+[INFO ] 2016-09-30 17:40:51.609 [main] BookStore - End Main
+[INFO ] 2016-09-30 17:40:55.157 [main] BookStore - Start Main
+[INFO ] 2016-09-30 17:40:55.165 [main] BookStore - End Main
+[INFO ] 2016-10-07 14:59:11.982 [main] BookStore - Start Main
+[INFO ] 2016-10-07 14:59:12.078 [main] BookStore - End Main
+[INFO ] 2016-10-07 15:00:03.319 [main] BookStore - Start Main
+[INFO ] 2016-10-07 15:00:03.366 [main] BookStore - End Main
+[INFO ] 2016-11-03 12:58:51.727 [main] BookStore - Start Main
+[INFO ] 2016-11-03 12:58:51.754 [main] BookStore - A new book was added to the Bookstore
+[INFO ] 2016-11-03 12:58:51.754 [main] BookStore - A book was removed from the Bookstore
+[ERROR] 2016-11-03 12:58:56.006 [main] BookStore - Error during run
+eBookStore.NotExistingBook: Required book doesn't exist in our bookstore
+	at eBookStore.BookStore.searchBook(BookStore.java:52) ~[classes/:?]
+	at eBookStore.BookStore.main(BookStore.java:96) [classes/:?]
+[INFO ] 2016-11-03 12:58:56.011 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-11-03 12:58:56.012 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-11-03 12:58:56.013 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-11-03 12:58:56.014 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-11-03 12:58:56.015 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-11-03 12:58:56.016 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-11-03 12:58:56.017 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-11-03 12:58:56.018 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-11-03 12:58:56.019 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-11-03 12:58:56.020 [main] BookStore - A new book was saved to the file Bookstore.txt
+[INFO ] 2016-11-03 12:58:56.021 [main] BookStore - A new book was saved to the file Bookstore.txt
+[ERROR] 2016-11-03 12:58:56.021 [main] BookStore - Error during run
+java.lang.IndexOutOfBoundsException: Index: 11, Size: 11
+	at java.util.LinkedList.checkElementIndex(LinkedList.java:555) ~[?:1.8.0_92]
+	at java.util.LinkedList.get(LinkedList.java:476) ~[?:1.8.0_92]
+	at eBookStore.BookStore.main(BookStore.java:113) [classes/:?]
+[INFO ] 2016-11-03 12:58:56.023 [main] BookStore - End Main
